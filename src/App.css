@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+#component{
+  position: relative;
+}
+#Settings{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
