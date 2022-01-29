@@ -1,0 +1,133 @@
+#propsContainer{
+    width: 300px;
+    border: 1px solid #e8e8e8;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+
+.accordion > *{
+    font-weight: 500;
+}
+
+.accordion > *:focus{
+    outline: none !important;
+}
+.accordion{
+    width: 300px;
+}
+
+.fontSizeSelect{
+    width: 70px;
+    text-align: center;
+    height: 30px;
+}
+
+.fontColor,.fontSize{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding-right: 10px;
+}
+
+.fontFamily{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.fontFamilySelect{
+    width: 95%;
+    margin-left: 5%;
+    margin-top: 5px;
+}
+
+.fontShadow{
+    margin-top: 20px;
+}
+
+.fontShadow div{
+    width: 100%;
+    margin: 5px 0px;
+}
+
+.fontShadow div div{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    box-sizing: border-box;
+    padding-right: 10px;
+    margin-top: 5px;
+}
+
+.shadowInp{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0px 5px;
+}
+
+.elemState{
+    width: 150px;
+    text-align: center;
+    height: 30px;
+}
+
+.statecontainer{
+    width: 300px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #e8e8e8;
+}
+
+.backgroundColor{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    /* margin-left: 5%; */
+    align-items: center;
+    padding-top: 20px;
+}
+
+.padding div{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.paddingsubcont{
+    width: 50% !important;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.paddingBox{
+    width: 100% !important;
+}
+
+.otherProps > div{
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.otherinp{
+    width: 40%;
+}
