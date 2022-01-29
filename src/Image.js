@@ -4,8 +4,11 @@ import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 
 export default function Image(props) {
     const [image, setImage] = useState(null);
+
     const styleImage = `height: ${props.height};
         position: ${props.position};`
+
+
     const Change = (e) => {
         if (e.target.files[0])
         {
@@ -35,7 +38,6 @@ export default function Image(props) {
     return (
         <div id="img-div">
             <input type="file" className = "my-3" onChange={Change} id="img-upload"/>
-            {/* <button className='btn btn-dark' onClick={()=> props.upload(image.type,"img-upload")}>Upload Image</button> */}
             <button className='btn btn-dark' onClick={()=> upload(image.type,"img-upload")}>Upload Image</button>
         </div>
     )
