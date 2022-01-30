@@ -245,8 +245,27 @@ export default function Properties({ curSelected, setCurSelected }) {
         getProps();
     }, [curSelected, elemState]);
 
+    const move = (e, x, y, addItems)=>{
+        addItems.style.left = (e.clientX + x)+"px";
+        addItems.style.top = (e.clientY + y)+"px";
+    }
+    const grabItem = (e)=>{
+        const addItems = document.getElementById("propsContainer");
+        var x = addItems.offsetLeft - e.clientX;
+        var y = addItems.offsetTop - e.clientY;
+        var graber = (e)=>{move(e, x, y, addItems)}
+        window.addEventListener("mousemove",graber);
+        window.addEventListener('mouseup',()=>{
+            window.removeEventListener('mousemove',graber);
+        })
+
+    }
+
+
     return (
         <div id="propsContainer">
+            <div className="grab grabprops" onMouseDown={grabItem}><i className="fas fa-grip-vertical"></i></div>
+
             <div className="statecontainer">
                 Box State
                 <select
