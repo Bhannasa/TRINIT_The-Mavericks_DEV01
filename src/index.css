@@ -61,3 +61,8 @@
 .grabprops{
   top: 15px;
 }
+
+.grabx{
+  top: 0px;
+  left: calc(2px + 100%);
+}
