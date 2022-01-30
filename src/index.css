@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Comforter&family=Cookie&family=Dancing+Script:wght@600&family=IBM+Plex+Sans+Thai+Looped:wght@300&family=Josefin+Sans:wght@300&family=Mochiy+Pop+P+One&family=Sarabun:wght@100&family=Satisfy&family=Supermercado+One&display=swap');
 
+*{
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .w-100-mid{
   display: flex;
   width: 100%;
