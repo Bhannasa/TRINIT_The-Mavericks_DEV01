@@ -25,6 +25,7 @@ function Navbar(props) {
                 </ul>
             </div>
         </div>
+        
         <Settings additional={[<AddRem items={items} setItems={setItems}/>]}/>
     </nav>
     );

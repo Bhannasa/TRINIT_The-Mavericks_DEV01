@@ -1,9 +1,12 @@
 import "./styles/Properties.css";
+import BaseContext from "../Context/BaseContext"
 
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 
 export default function Properties({ curSelected, setCurSelected }) {
     const [elemState, setElemState] = useState("Normal");
+    const context = useContext(BaseContext);
+
     const trimToNumber = (x, round) => {
         var num = "";
         var n = x.length;
@@ -225,14 +228,13 @@ export default function Properties({ curSelected, setCurSelected }) {
         if (!elem) return;
         var styles;
         if (elemState === "Normal") {
-            console.log("Normal");
+            styles = context.curCSS.normal;
             styles = window.getComputedStyle(elem);
         } else if (elemState === "Active") {
-            styles = window.getComputedStyle(elem, "active");
+            styles = context.curCSS.active;
             console.log("Active");
         } else {
-            styles = window.getComputedStyle(elem, "hover");
-            console.log(styles["background-color"]);
+            styles = context.curCSS.hover;
             console.log("Hover");
         }
         resetProps(styles);
